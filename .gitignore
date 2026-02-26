@@ -1,0 +1,57 @@
+# ─────────────────────────────────────────────
+# DATABASE FILES
+# ─────────────────────────────────────────────
+*.duckdb
+*.duckdb.wal
+*.db
+*.sqlite
+*.sqlite3
+
+# ─────────────────────────────────────────────
+# DATA FILES
+# ─────────────────────────────────────────────
+*.csv
+*.parquet
+*.json
+*.jsonl
+*.xlsx
+*.xls
+*.tsv
+
+# Data folders
+data/
+datasets/
+raw/
+processed/
+output/
+outputs/
+simulated/
+
+# ─────────────────────────────────────────────
+# PYTHON
+# ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+*.ipynb
+
+# ─────────────────────────────────────────────
+# IDE & SYSTEM
+# ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+*.log
+*.tmp
