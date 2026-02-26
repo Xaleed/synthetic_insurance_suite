@@ -1,6 +1,6 @@
 # 🏥 insurance-data-forge
 
-> Simulated insurance datasets built with **Python**, **DuckDB**, and **Faker** —
+> Simulated insurance datasets built with **Python** and **DuckDB**,
 > designed for analytics, machine learning, and actuarial practice.
 
 ---
@@ -10,10 +10,9 @@
 This repository generates **realistic but fully synthetic** insurance databases.
 No real people. No real claims. Just clean, structured data you can use to:
 
-- Practice SQL and data analysis
-- Build and test machine learning models
-- Learn actuarial and insurance data concepts
 - Experiment with DuckDB as an analytical database
+- Practice SQL and data analysis
+- Learn actuarial and insurance data concepts
 
 ---
 
@@ -39,6 +38,7 @@ dim_employers ──┤
 dim_providers ──┘                                          │
                                                      fact_payments
 ```
+### Defult input
 
 | Table | Rows | Description |
 |---|---|---|
@@ -51,36 +51,22 @@ dim_providers ──┘                                          │
 | `fact_claim_diagnoses` | ~75,000 | ICD-10 diagnoses per claim |
 | `fact_payments` | ~32,500 | Payment records |
 
-### Key Features
-- **Realistic distributions** — claim amounts follow a lognormal distribution
 - **ICD-10 diagnosis codes** — real medical coding standard
 - **CPT procedure codes** — real medical procedure standard
 - **3% fraud rate** — built-in fraud flag for detection practice
 - **25% chronic condition prevalence** — realistic population health
-- **Fully normalized 3NF schema** — proper relational design
 - **Reproducible** — seeded random generation (`seed=42`)
 
 ---
 
-## ⚡ Quick Start
 
 ### 1. Install dependencies
 ```bash
 pip install duckdb faker numpy pandas
 ```
 
-### 2. Generate the health insurance database
-```bash
-cd health
-python health_insurance_db_normalized.py
-```
 
-This creates `health_insurance_normalized.duckdb` in your folder.
 
-### 3. Run practice queries
-```bash
-python practice_queries.py
-```
 
 ### 4. Connect and explore manually
 ```python

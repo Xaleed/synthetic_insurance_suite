@@ -459,3 +459,7 @@ def main():
 if __name__ == "__main__":
     main()
 # %%
+con = duckdb.connect("health_insurance_normalized.duckdb")
+
+con.execute("SHOW TABLES").df()
+# %%
